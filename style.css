@@ -272,10 +272,17 @@ footer {
 
     .header-btn {
         padding: 0 10px;
+        width: fit-content;
+        height: fit-content;
+        padding: 8px;
     }
 
     .homePage {
         padding: 0 20px;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     h1 {
