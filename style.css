@@ -28,7 +28,9 @@ header {
 
 button {
     height: 46px;
-    width: 188px;
+    width: fit-content;
+    padding-left: 16px;
+    padding-right: 16px;
     border-width: 0;
     border-radius: 8px;
     background-color: #004BFE;
@@ -279,7 +281,7 @@ footer {
 
     .homePage {
         padding: 0 20px;
-        height: 80vh;
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
