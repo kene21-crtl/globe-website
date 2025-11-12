@@ -140,17 +140,6 @@ p {
     min-width: 250px;
 }
 
-.secondPage-content h2 {
-    text-align: start;
-    color: #ffffff;
-}
-
-.secondPage-content p {
-    color: white;
-    text-align: start;
-    padding: 0;
-}
-
 .secondPage-image {
     flex: 0 0 auto;
     display: flex;
@@ -394,43 +383,40 @@ footer {
 
     .secondPage {
         flex-direction: column;
-        padding: 40px 30px 0 30px !important;
+        padding: 40px 30px 0 30px;
         text-align: center;
         height: auto;
     }
 
     .secondPage-content {
         order: 1;
-        padding: 0 !important;
-        text-align: center;
+        padding: 0;
     }
 
-    .secondPage h2 {
+    .secondPage-content h2 {
         text-align: center !important;
     }
 
-    .secondPage p {
+    .secondPage-content p {
         text-align: center !important;
     }
 
     .secondPage-image {
         order: 2;
-        display: flex !important;
         justify-content: center;
         height: auto;
-        margin-top: 0;
         margin-bottom: 0;
         padding-bottom: 0;
     }
 
     /* Cacher l'image desktop en mobile */
     .ios-mockup-desktop {
-        display: none !important;
+        display: none;
     }
 
     /* Afficher l'image mobile */
     .ios-mockup-mobile {
-        display: block !important;
+        display: block;
         height: auto;
         width: 100%;
         max-width: 350px;
@@ -572,30 +558,24 @@ footer {
     }
 
     .secondPage {
-        padding: 40px 20px 0 20px !important;
+        padding: 40px 20px 0 20px;
     }
 
     .secondPage-content {
-        padding: 0 !important;
-        text-align: center;
+        padding: 0;
     }
 
-    .secondPage h2 {
+    .secondPage-content h2 {
         text-align: center !important;
     }
 
-    .secondPage p {
+    .secondPage-content p {
         text-align: center !important;
     }
 
     .ios-mockup-mobile {
         max-width: 280px;
         margin-bottom: 0;
-        display: block !important;
-    }
-
-    .ios-mockup-desktop {
-        display: none !important;
     }
 
     .ios-mockup {
