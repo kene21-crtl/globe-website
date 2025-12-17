@@ -1,545 +1,276 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Conditions d'Utilisation - Globe</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
-      line-height: 1.6;
-      color: #333;
-      background: #f9f9f9;
-    }
-
-    .header {
-      background: linear-gradient(135deg, #0A84FF 0%, #0066CC 100%);
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-
-    .header h1 {
-      font-size: 32px;
-      margin-bottom: 10px;
-    }
-
-    .header p {
-      font-size: 16px;
-      opacity: 0.9;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: 40px auto;
-      background: white;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-
-    h2 {
-      color: #0A84FF;
-      font-size: 24px;
-      margin-top: 30px;
-      margin-bottom: 15px;
-      padding-bottom: 10px;
-      border-bottom: 2px solid #f0f0f0;
-    }
-
-    h3 {
-      color: #333;
-      font-size: 18px;
-      margin-top: 20px;
-      margin-bottom: 10px;
-    }
-
-    p {
-      margin-bottom: 15px;
-      text-align: justify;
-    }
-
-    ul {
-      margin-left: 30px;
-      margin-bottom: 15px;
-    }
-
-    li {
-      margin-bottom: 8px;
-    }
-
-    .last-updated {
-      background: #f0f7ff;
-      padding: 15px;
-      border-radius: 8px;
-      margin-bottom: 30px;
-      border-left: 4px solid #0A84FF;
-    }
-
-    .important-box {
-      background: #fff3cd;
-      border-left: 4px solid #ffc107;
-      padding: 15px;
-      margin: 20px 0;
-      border-radius: 8px;
-    }
-
-    .pricing-table {
-      background: #f8f8f8;
-      padding: 20px;
-      border-radius: 8px;
-      margin: 20px 0;
-      border: 1px solid #e0e0e0;
-    }
-
-    .contact-box {
-      background: #f8f8f8;
-      padding: 20px;
-      border-radius: 8px;
-      margin-top: 30px;
-      border: 1px solid #e0e0e0;
-    }
-
-    .back-link {
-      display: inline-block;
-      margin-top: 30px;
-      color: #0A84FF;
-      text-decoration: none;
-      font-weight: 600;
-      transition: opacity 0.3s;
-    }
-
-    .back-link:hover {
-      opacity: 0.7;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 20px 0;
-    }
-
-    th, td {
-      padding: 12px;
-      text-align: left;
-      border-bottom: 1px solid #e0e0e0;
-    }
-
-    th {
-      background: #f0f7ff;
-      color: #0A84FF;
-      font-weight: 600;
-    }
-
-    @media (max-width: 768px) {
-      .container {
-        margin: 20px;
-        padding: 20px;
-      }
-
-      .header h1 {
-        font-size: 24px;
-      }
-
-      h2 {
-        font-size: 20px;
-      }
-
-      table {
-        font-size: 14px;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Globe - Conditions générales d'utilisation</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .legal-page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        
+        .legal-title {
+            color: #004BFE;
+            font-size: 48px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .legal-date {
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 40px;
+        }
+        
+        .legal-section {
+            margin-bottom: 40px;
+        }
+        
+        .legal-section h2 {
+            color: #004BFE;
+            font-size: 28px;
+            margin-bottom: 15px;
+            text-transform: none;
+        }
+        
+        .legal-section h3 {
+            color: #333;
+            font-size: 20px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            text-transform: none;
+        }
+        
+        .legal-section p, .legal-section li {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.8;
+            text-align: left;
+            margin-bottom: 15px;
+        }
+        
+        .legal-section ul {
+            margin-left: 20px;
+        }
+        
+        .legal-section li {
+            margin-bottom: 10px;
+        }
+        
+        .back-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 30px;
+            background-color: #004BFE;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+        
+        .back-button:hover {
+            background-color: #0039c7;
+        }
+    </style>
 </head>
 <body>
-  <div class="header">
-    <h1>Conditions d'Utilisation</h1>
-    <p>Globe - Apprends les langues en discutant avec l'IA</p>
-  </div>
 
-  <div class="container">
-    <div class="last-updated">
-      <strong>Dernière mise à jour :</strong> 17 décembre 2024
+<div class="legal-page">
+    <h1 class="legal-title">Conditions Générales d'Utilisation</h1>
+    <p class="legal-date">Dernière mise à jour : 4 décembre 2025</p>
+    
+    <div class="legal-section">
+        <h2>1. Acceptation des conditions</h2>
+        <p>
+            En utilisant l'application Globe, vous acceptez d'être lié par ces Conditions Générales d'Utilisation ("Conditions"). Si vous n'acceptez pas ces Conditions, veuillez ne pas utiliser l'application.
+        </p>
     </div>
-
-    <p>
-      Bienvenue sur Globe ! En téléchargeant, installant ou utilisant notre application mobile, 
-      vous acceptez d'être lié par les présentes Conditions d'Utilisation. Veuillez les lire 
-      attentivement avant d'utiliser l'application.
-    </p>
-
-    <h2>1. Acceptation des conditions</h2>
     
-    <p>
-      En accédant à l'application Globe ("l'Application", "le Service"), vous acceptez d'être 
-      juridiquement lié par ces Conditions d'Utilisation ("Conditions"). Si vous n'acceptez pas 
-      ces Conditions, vous ne devez pas utiliser l'Application.
-    </p>
-
-    <p>
-      Ces Conditions constituent un accord juridique entre vous ("Utilisateur", "vous") et Globe 
-      ("nous", "notre", "nos").
-    </p>
-
-    <h2>2. Description du service</h2>
-    
-    <p>
-      Globe est une application mobile d'apprentissage des langues utilisant l'intelligence 
-      artificielle pour créer des conversations interactives. Le Service comprend :
-    </p>
-    <ul>
-      <li>Des conversations avec un assistant IA pour pratiquer les langues</li>
-      <li>Des scénarios de conversation personnalisés</li>
-      <li>Un suivi de progression et des statistiques</li>
-      <li>Des exercices de prononciation et d'écriture</li>
-      <li>Un système d'abonnement Premium pour accéder à des fonctionnalités avancées</li>
-    </ul>
-
-    <h2>3. Création de compte et éligibilité</h2>
-    
-    <h3>3.1 Âge minimum</h3>
-    <p>
-      Vous devez avoir au moins 13 ans pour utiliser Globe. Si vous avez moins de 18 ans, 
-      vous déclarez avoir obtenu l'autorisation de vos parents ou tuteurs légaux.
-    </p>
-
-    <h3>3.2 Informations de compte</h3>
-    <p>
-      Lors de la création de votre compte, vous vous engagez à :
-    </p>
-    <ul>
-      <li>Fournir des informations exactes, complètes et à jour</li>
-      <li>Maintenir la sécurité de votre compte et de votre mot de passe</li>
-      <li>Nous informer immédiatement de toute utilisation non autorisée</li>
-      <li>Être responsable de toutes les activités effectuées sous votre compte</li>
-    </ul>
-
-    <h3>3.3 Sign in with Apple</h3>
-    <p>
-      Si vous utilisez Sign in with Apple, vous acceptez également les conditions d'Apple 
-      relatives à cette fonctionnalité. Nous ne stockons pas votre mot de passe Apple.
-    </p>
-
-    <h2>4. Abonnements et paiements</h2>
-    
-    <h3>4.1 Types d'abonnements</h3>
-    <div class="pricing-table">
-      <table>
-        <thead>
-          <tr>
-            <th>Plan</th>
-            <th>Durée</th>
-            <th>Prix</th>
-            <th>Avantages</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Gratuit</strong></td>
-            <td>Illimité</td>
-            <td>0 €</td>
-            <td>Accès de base, scénarios limités</td>
-          </tr>
-          <tr>
-            <td><strong>Premium Mensuel</strong></td>
-            <td>1 mois</td>
-            <td>9,99 €</td>
-            <td>Tous les scénarios, conversations illimitées</td>
-          </tr>
-          <tr>
-            <td><strong>Premium Annuel</strong></td>
-            <td>12 mois</td>
-            <td>79,99 €</td>
-            <td>Tous les avantages + économie de 33%</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="legal-section">
+        <h2>2. Description du service</h2>
+        <p>
+            Globe est une application mobile d'apprentissage des langues qui utilise l'intelligence artificielle pour permettre aux utilisateurs de pratiquer des conversations et d'améliorer leurs compétences linguistiques.
+        </p>
+        <p>
+            Le service comprend :
+        </p>
+        <ul>
+            <li>Des conversations textuelles avec un assistant IA</li>
+            <li>Des fonctionnalités de pratique vocale</li>
+            <li>Un système de suivi de progression</li>
+            <li>Un abonnement Premium optionnel pour des fonctionnalités supplémentaires</li>
+        </ul>
     </div>
-
-    <h3>4.2 Renouvellement automatique</h3>
-    <div class="important-box">
-      <strong>⚠️ Important :</strong> Les abonnements Premium se renouvellent automatiquement 
-      à la fin de chaque période (mensuelle ou annuelle) au même prix, sauf annulation.
+    
+    <div class="legal-section">
+        <h2>3. Création de compte</h2>
+        <p>
+            Pour utiliser Globe, vous devez :
+        </p>
+        <ul>
+            <li>Avoir au moins 13 ans</li>
+            <li>Fournir des informations exactes et à jour</li>
+            <li>Maintenir la sécurité de votre compte</li>
+            <li>Ne pas partager vos identifiants de connexion</li>
+        </ul>
+        <p>
+            Vous êtes responsable de toutes les activités effectuées depuis votre compte.
+        </p>
     </div>
-    <ul>
-      <li>Votre abonnement se renouvelle automatiquement sauf si vous l'annulez au moins 24 heures avant la fin de la période en cours</li>
-      <li>Le paiement sera débité sur votre compte iTunes dans les 24 heures précédant le renouvellement</li>
-      <li>Le montant facturé sera celui indiqué au moment de l'achat initial, sauf modification de prix dont vous serez informé</li>
-      <li>Vous pouvez gérer votre abonnement et désactiver le renouvellement automatique à tout moment dans les réglages de votre compte App Store</li>
-    </ul>
-
-    <h3>4.3 Annulation d'abonnement</h3>
-    <p>Pour annuler votre abonnement :</p>
-    <ol>
-      <li>Ouvrez l'application Réglages sur votre iPhone ou iPad</li>
-      <li>Touchez votre nom en haut de l'écran</li>
-      <li>Touchez "Abonnements"</li>
-      <li>Sélectionnez Globe</li>
-      <li>Touchez "Annuler l'abonnement"</li>
-    </ol>
-    <p>
-      <strong>Note :</strong> L'annulation prend effet à la fin de la période de facturation en cours. 
-      Vous conservez l'accès Premium jusqu'à cette date.
-    </p>
-
-    <h3>4.4 Essai gratuit (si applicable)</h3>
-    <p>
-      Si nous proposons un essai gratuit :
-    </p>
-    <ul>
-      <li>La durée de l'essai sera clairement indiquée avant votre inscription</li>
-      <li>À la fin de l'essai gratuit, vous serez automatiquement facturé pour l'abonnement choisi, sauf annulation avant la fin de l'essai</li>
-      <li>Un seul essai gratuit par utilisateur</li>
-      <li>Nous nous réservons le droit de déterminer l'éligibilité à un essai gratuit</li>
-    </ul>
-
-    <h3>4.5 Remboursements</h3>
-    <p>
-      Les paiements sont traités par Apple via l'App Store. Pour demander un remboursement :
-    </p>
-    <ul>
-      <li>Contactez directement le support Apple à <a href="https://support.apple.com" target="_blank">support.apple.com</a></li>
-      <li>Les remboursements sont soumis à la politique d'Apple, pas à la nôtre</li>
-      <li>Globe ne peut pas traiter directement les demandes de remboursement</li>
-      <li>Nous ne fournissons généralement pas de remboursement pour les abonnements annulés en cours de période</li>
-    </ul>
-
-    <h3>4.6 Modifications de prix</h3>
-    <p>
-      Nous nous réservons le droit de modifier nos tarifs. En cas d'augmentation de prix :
-    </p>
-    <ul>
-      <li>Vous serez informé au moins 30 jours avant l'application du nouveau prix</li>
-      <li>Le nouveau prix s'appliquera uniquement aux renouvellements futurs</li>
-      <li>Vous pouvez annuler votre abonnement avant le renouvellement si vous n'acceptez pas le nouveau prix</li>
-    </ul>
-
-    <h2>5. Utilisation acceptable</h2>
     
-    <h3>5.1 Vous vous engagez à :</h3>
-    <ul>
-      <li>Utiliser l'Application uniquement à des fins légales et éducatives</li>
-      <li>Respecter les droits de propriété intellectuelle de Globe</li>
-      <li>Ne pas tenter de contourner les mesures de sécurité</li>
-      <li>Ne pas utiliser l'Application pour diffuser du contenu offensant, illégal ou nuisible</li>
-      <li>Ne pas partager votre compte avec d'autres personnes</li>
-    </ul>
-
-    <h3>5.2 Interdictions</h3>
-    <p>Il est strictement interdit de :</p>
-    <ul>
-      <li>Copier, modifier, distribuer, vendre ou louer l'Application ou son contenu</li>
-      <li>Effectuer du reverse engineering, décompiler ou désassembler l'Application</li>
-      <li>Utiliser des robots, scrapers ou autres moyens automatisés pour accéder au Service</li>
-      <li>Interférer avec le fonctionnement normal de l'Application</li>
-      <li>Créer plusieurs comptes pour abuser des essais gratuits ou promotions</li>
-      <li>Harceler, abuser ou menacer d'autres utilisateurs ou notre équipe</li>
-    </ul>
-
-    <h2>6. Propriété intellectuelle</h2>
-    
-    <p>
-      Tous les droits, titres et intérêts relatifs à l'Application, y compris mais sans s'y 
-      limiter, le code source, les designs, les logos, les textes, les graphiques, et le contenu 
-      généré par l'IA, sont et resteront la propriété exclusive de Globe.
-    </p>
-
-    <p>
-      Nous vous accordons une licence limitée, non exclusive, non transférable et révocable 
-      pour utiliser l'Application à des fins personnelles et non commerciales, conformément 
-      à ces Conditions.
-    </p>
-
-    <h3>6.1 Contenu utilisateur</h3>
-    <p>
-      Les conversations que vous créez dans l'Application restent votre propriété. Cependant, 
-      en utilisant le Service, vous nous accordez une licence mondiale, non exclusive et 
-      gratuite pour :
-    </p>
-    <ul>
-      <li>Stocker et traiter votre contenu pour fournir le Service</li>
-      <li>Utiliser vos données de manière anonymisée pour améliorer nos algorithmes d'IA</li>
-      <li>Analyser les tendances d'utilisation pour améliorer l'Application</li>
-    </ul>
-
-    <h2>7. Intelligence Artificielle et contenu généré</h2>
-    
-    <p>
-      Globe utilise des modèles d'intelligence artificielle pour générer des conversations. 
-      Vous reconnaissez et acceptez que :
-    </p>
-    <ul>
-      <li>Le contenu généré par l'IA peut parfois être inexact ou inapproprié</li>
-      <li>Nous ne garantissons pas l'exactitude, la pertinence ou la qualité du contenu généré</li>
-      <li>Vous utilisez le contenu généré par l'IA à vos propres risques</li>
-      <li>Le contenu de l'IA ne remplace pas l'enseignement professionnel d'une langue</li>
-      <li>Nous ne sommes pas responsables des conséquences découlant de l'utilisation du contenu généré</li>
-    </ul>
-
-    <h2>8. Suspension et résiliation</h2>
-    
-    <h3>8.1 Résiliation par l'utilisateur</h3>
-    <p>
-      Vous pouvez supprimer votre compte à tout moment via l'Application 
-      (Paramètres → Supprimer mon compte). La suppression du compte :
-    </p>
-    <ul>
-      <li>Est irréversible</li>
-      <li>Entraîne la suppression de toutes vos données personnelles</li>
-      <li>N'annule pas automatiquement votre abonnement (vous devez l'annuler séparément via l'App Store)</li>
-      <li>Ne donne pas droit à un remboursement pour la période en cours</li>
-    </ul>
-
-    <h3>8.2 Résiliation par Globe</h3>
-    <p>
-      Nous nous réservons le droit de suspendre ou de résilier votre accès au Service, 
-      sans préavis et sans remboursement, si :
-    </p>
-    <ul>
-      <li>Vous violez ces Conditions d'Utilisation</li>
-      <li>Vous utilisez le Service de manière frauduleuse ou abusive</li>
-      <li>Nous devons nous conformer à une obligation légale</li>
-      <li>Votre compte a été inactif pendant plus de 2 ans</li>
-    </ul>
-
-    <h2>9. Garanties et limitations de responsabilité</h2>
-    
-    <h3>9.1 Garanties</h3>
-    <p>
-      Globe est fourni "tel quel" et "selon disponibilité". Nous ne garantissons pas que :
-    </p>
-    <ul>
-      <li>Le Service sera ininterrompu, sécurisé ou exempt d'erreurs</li>
-      <li>Les résultats obtenus seront exacts ou fiables</li>
-      <li>Tous les bugs ou défauts seront corrigés</li>
-      <li>Vous atteindrez vos objectifs d'apprentissage</li>
-    </ul>
-
-    <h3>9.2 Limitation de responsabilité</h3>
-    <div class="important-box">
-      <p>
-        <strong>Dans toute la mesure permise par la loi applicable :</strong>
-      </p>
-      <p>
-        Globe, ses dirigeants, employés et partenaires ne seront pas responsables des dommages 
-        directs, indirects, accessoires, spéciaux, consécutifs ou punitifs résultant de :
-      </p>
-      <ul>
-        <li>L'utilisation ou l'impossibilité d'utiliser le Service</li>
-        <li>La perte de données ou de profits</li>
-        <li>Les interruptions de service</li>
-        <li>Les erreurs dans le contenu généré par l'IA</li>
-        <li>Les décisions prises sur la base du contenu de l'Application</li>
-      </ul>
-      <p>
-        Notre responsabilité totale ne dépassera en aucun cas le montant que vous avez payé 
-        pour le Service au cours des 12 derniers mois.
-      </p>
+    <div class="legal-section">
+        <h2>4. Abonnement Premium</h2>
+        
+        <h3>4.1 Tarification</h3>
+        <p>
+            Globe propose deux options d'abonnement Premium :
+        </p>
+        <ul>
+            <li><strong>Mensuel :</strong> Facturation mensuelle récurrente</li>
+            <li><strong>Annuel :</strong> Facturation annuelle récurrente</li>
+        </ul>
+        <p>
+            Les prix sont affichés dans l'application et peuvent varier selon votre région.
+        </p>
+        
+        <h3>4.2 Renouvellement automatique</h3>
+        <p>
+            Votre abonnement se renouvelle automatiquement sauf si vous l'annulez au moins 24 heures avant la fin de la période en cours. Le paiement sera débité de votre compte iTunes lors de la confirmation de l'achat.
+        </p>
+        
+        <h3>4.3 Gestion de l'abonnement</h3>
+        <p>
+            Vous pouvez gérer ou annuler votre abonnement dans les réglages de votre compte iTunes après l'achat. L'annulation prendra effet à la fin de la période de facturation en cours.
+        </p>
+        
+        <h3>4.4 Politique de remboursement</h3>
+        <p>
+            Les achats effectués via l'App Store sont gérés par Apple. Pour toute demande de remboursement, veuillez contacter Apple directement. Globe ne peut pas traiter les remboursements pour les achats effectués via l'App Store.
+        </p>
     </div>
-
-    <h2>10. Indemnisation</h2>
     
-    <p>
-      Vous acceptez d'indemniser, de défendre et de dégager de toute responsabilité Globe, 
-      ses dirigeants, directeurs, employés et agents contre toutes réclamations, responsabilités, 
-      dommages, pertes et dépenses, y compris les honoraires d'avocat raisonnables, découlant de :
-    </p>
-    <ul>
-      <li>Votre violation de ces Conditions</li>
-      <li>Votre utilisation inappropriée du Service</li>
-      <li>Votre violation des droits d'un tiers</li>
-      <li>Tout contenu que vous soumettez via l'Application</li>
-    </ul>
-
-    <h2>11. Modifications du service et des conditions</h2>
-    
-    <h3>11.1 Modifications du Service</h3>
-    <p>
-      Nous nous réservons le droit de modifier, suspendre ou interrompre tout ou partie du 
-      Service à tout moment, avec ou sans préavis. Nous ne serons pas responsables envers 
-      vous ou un tiers de toute modification, suspension ou interruption du Service.
-    </p>
-
-    <h3>11.2 Modifications des Conditions</h3>
-    <p>
-      Nous pouvons mettre à jour ces Conditions à tout moment. En cas de modification substantielle :
-    </p>
-    <ul>
-      <li>Nous vous en informerons par notification dans l'Application ou par email</li>
-      <li>Les nouvelles Conditions entreront en vigueur 30 jours après notification</li>
-      <li>Votre utilisation continue du Service après cette période constitue votre acceptation des nouvelles Conditions</li>
-      <li>Si vous n'acceptez pas les nouvelles Conditions, vous devez cesser d'utiliser le Service</li>
-    </ul>
-
-    <h2>12. Loi applicable et juridiction</h2>
-    
-    <p>
-      Ces Conditions sont régies par les lois françaises, sans égard aux principes de conflits 
-      de lois. En cas de litige :
-    </p>
-    <ul>
-      <li>Vous acceptez de tenter d'abord une résolution amiable en nous contactant</li>
-      <li>Si aucun accord n'est trouvé, les tribunaux français seront exclusivement compétents</li>
-      <li>Les consommateurs résidant dans l'UE conservent leurs droits selon la législation locale</li>
-    </ul>
-
-    <h2>13. Dispositions diverses</h2>
-    
-    <h3>13.1 Intégralité de l'accord</h3>
-    <p>
-      Ces Conditions, ainsi que notre Politique de Confidentialité, constituent l'intégralité 
-      de l'accord entre vous et Globe concernant l'utilisation du Service.
-    </p>
-
-    <h3>13.2 Divisibilité</h3>
-    <p>
-      Si une disposition de ces Conditions est jugée invalide ou inapplicable, les autres 
-      dispositions resteront pleinement en vigueur.
-    </p>
-
-    <h3>13.3 Renonciation</h3>
-    <p>
-      Le fait de ne pas exercer ou appliquer un droit ou une disposition de ces Conditions 
-      ne constitue pas une renonciation à ce droit ou à cette disposition.
-    </p>
-
-    <h3>13.4 Cession</h3>
-    <p>
-      Vous ne pouvez pas céder ou transférer ces Conditions sans notre consentement écrit préalable. 
-      Nous pouvons céder ces Conditions sans restriction.
-    </p>
-
-    <h3>13.5 Langue</h3>
-    <p>
-      Ces Conditions sont rédigées en français. En cas de traduction dans une autre langue, 
-      la version française prévaudra en cas de conflit.
-    </p>
-
-    <h2>14. Contact</h2>
-    
-    <div class="contact-box">
-      <p>Pour toute question concernant ces Conditions d'Utilisation :</p>
-      <p>
-        <strong>Email :</strong> <a href="mailto:glob.contact.app@gmail.com">glob.contact.app@gmail.com</a><br>
-        <strong>Support :</strong> <a href="https://kene21-crtl.github.io/globe-website/support.html" target="_blank">Page de support</a><br>
-        <strong>Réponse :</strong> Nous nous engageons à répondre dans un délai de 72 heures
-      </p>
+    <div class="legal-section">
+        <h2>5. Utilisation acceptable</h2>
+        <p>
+            En utilisant Globe, vous vous engagez à ne pas :
+        </p>
+        <ul>
+            <li>Utiliser le service à des fins illégales</li>
+            <li>Harceler, abuser ou nuire à d'autres utilisateurs</li>
+            <li>Tenter de contourner les mesures de sécurité</li>
+            <li>Utiliser des bots ou des scripts automatisés</li>
+            <li>Extraire ou copier du contenu de manière systématique</li>
+            <li>Partager du contenu offensant ou inapproprié</li>
+        </ul>
     </div>
+    
+    <div class="legal-section">
+        <h2>6. Propriété intellectuelle</h2>
+        <p>
+            Globe et son contenu original, ses fonctionnalités et ses fonctionnalités sont et resteront la propriété exclusive de Globe et de ses concédants de licence. Le service est protégé par des droits d'auteur, des marques commerciales et d'autres lois.
+        </p>
+        <p>
+            Vous conservez tous les droits sur le contenu que vous créez dans l'application.
+        </p>
+    </div>
+    
+    <div class="legal-section">
+        <h2>7. Suppression de compte</h2>
+        <p>
+            Vous pouvez supprimer votre compte à tout moment depuis les paramètres de l'application. La suppression de votre compte :
+        </p>
+        <ul>
+            <li>Est définitive et irréversible</li>
+            <li>Supprime toutes vos données personnelles</li>
+            <li>N'annule pas automatiquement votre abonnement (vous devez l'annuler séparément via iTunes)</li>
+            <li>Prend effet immédiatement</li>
+        </ul>
+    </div>
+    
+    <div class="legal-section">
+        <h2>8. Limitation de responsabilité</h2>
+        <p>
+            Globe est fourni "tel quel" sans garantie d'aucune sorte. Nous ne garantissons pas que :
+        </p>
+        <ul>
+            <li>Le service sera ininterrompu ou sans erreur</li>
+            <li>Les résultats obtenus seront précis ou fiables</li>
+            <li>Tous les défauts seront corrigés</li>
+        </ul>
+        <p>
+            Globe n'est pas responsable des dommages indirects, accessoires, spéciaux, consécutifs ou punitifs résultant de votre utilisation du service.
+        </p>
+    </div>
+    
+    <div class="legal-section">
+        <h2>9. Modifications du service</h2>
+        <p>
+            Nous nous réservons le droit de modifier ou d'interrompre le service (temporairement ou de façon permanente) avec ou sans préavis. Nous ne serons pas responsables envers vous ou un tiers pour toute modification, suspension ou interruption du service.
+        </p>
+    </div>
+    
+    <div class="legal-section">
+        <h2>10. Résiliation</h2>
+        <p>
+            Nous pouvons résilier ou suspendre votre accès immédiatement, sans préavis ni responsabilité, pour quelque raison que ce soit, y compris, sans limitation, si vous violez les Conditions.
+        </p>
+        <p>
+            Toutes les dispositions des Conditions qui, de par leur nature, devraient survivre à la résiliation, survivront à la résiliation.
+        </p>
+    </div>
+    
+    <div class="legal-section">
+        <h2>11. Droit applicable</h2>
+        <p>
+            Ces Conditions sont régies et interprétées conformément aux lois de la France, sans égard aux dispositions relatives aux conflits de lois.
+        </p>
+    </div>
+    
+    <div class="legal-section">
+        <h2>12. Modifications des conditions</h2>
+        <p>
+            Nous nous réservons le droit de modifier ces Conditions à tout moment. Si nous apportons des modifications importantes, nous vous en informerons par email ou via une notification dans l'application.
+        </p>
+        <p>
+            Votre utilisation continue du service après de telles modifications constitue votre acceptation des nouvelles Conditions.
+        </p>
+    </div>
+    
+    <div class="legal-section">
+        <h2>13. Contact</h2>
+        <p>
+            Pour toute question concernant ces Conditions, contactez-nous :
+        </p>
+        <p>
+            Email : <a href="mailto:support@globe-app.com" style="color: #004BFE;">support@globe-app.com</a><br>
+            Site web : <a href="support.html" style="color: #004BFE;">Page de support</a>
+        </p>
+    </div>
+    
+    <div style="text-align: center;">
+        <a href="index.html" class="back-button">← Retour à l'accueil</a>
+    </div>
+</div>
 
-    <hr style="margin: 40px 0; border: none; border-top: 1px solid #e0e0e0;">
-
-    <p style="text-align: center; color: #666; font-size: 14px;">
-      En utilisant Globe, vous reconnaissez avoir lu, compris et accepté ces Conditions d'Utilisation.
+<footer>
+    <img src="assets/img/logo-globe-blanc.png" alt="Logo Globe" class="footer-logo">
+    
+    <div class="footer-links">
+        <a href="privacy.html">Politique de confidentialité</a>
+        <span class="footer-divider"></span>
+        <a href="terms.html">Conditions générales</a>
+        <span class="footer-divider"></span>
+        <a href="support.html">Support</a>
+    </div>
+    
+    <p class="footer-copyright">
+        © 2025 Globe - Tous droits réservés
     </p>
+</footer>
 
-    <a href="https://kene21-crtl.github.io/globe-website/" class="back-link">← Retour au site</a>
-  </div>
 </body>
 </html>
