@@ -490,7 +490,6 @@ footer {
 /* Mobiles (max 480px) */
 @media screen and (max-width: 480px) {
     header {
-        flex-direction: column;
         gap: 15px;
         padding: 15px;
         height: auto;
@@ -498,7 +497,7 @@ footer {
 
     .logo-container {
         width: 100%;
-        text-align: center;
+        text-align: start;
     }
 
     .logo-container img {
