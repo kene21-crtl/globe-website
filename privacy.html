@@ -6,10 +6,36 @@
     <title>Globe - Politique de confidentialité</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        .back-button-fixed {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            padding: 12px 24px;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            color: #004BFE;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            border: 1px solid rgba(0, 75, 254, 0.2);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .back-button-fixed:hover {
+            background: rgba(0, 75, 254, 0.9);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 75, 254, 0.3);
+        }
+        
         .legal-page {
             max-width: 900px;
             margin: 0 auto;
-            padding: 60px 20px;
+            padding: 80px 20px 60px 20px;
         }
         
         .legal-title {
@@ -61,23 +87,40 @@
             margin-bottom: 10px;
         }
         
-        .back-button {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 12px 30px;
-            background-color: #004BFE;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            transition: background-color 0.3s;
-        }
-        
-        .back-button:hover {
-            background-color: #0039c7;
+        /* Media queries pour mobile */
+        @media screen and (max-width: 768px) {
+            .back-button-fixed {
+                top: 15px;
+                left: 15px;
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+            
+            .legal-page {
+                padding: 70px 15px 40px 15px;
+            }
+            
+            .legal-title {
+                font-size: 32px;
+            }
+            
+            .legal-section h2 {
+                font-size: 22px;
+            }
+            
+            .legal-section h3 {
+                font-size: 18px;
+            }
+            
+            .legal-section p, .legal-section li {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
 <body>
+
+<a href="index.html" class="back-button-fixed">← Retour à l'accueil</a>
 
 <div class="legal-page">
     <h1 class="legal-title">Politique de confidentialité</h1>
@@ -210,10 +253,6 @@
             Email : <a href="mailto:support@globe-app.com" style="color: #004BFE;">support@globe-app.com</a><br>
             Site web : <a href="support.html" style="color: #004BFE;">Page de support</a>
         </p>
-    </div>
-    
-    <div style="text-align: center;">
-        <a href="index.html" class="back-button">← Retour à l'accueil</a>
     </div>
 </div>
 
